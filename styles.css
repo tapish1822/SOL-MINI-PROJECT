@@ -1,0 +1,634 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+
+
+  /* box-sizing: border-box; */
+}
+
+.container-fluid {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+
+/* ============= Animation background ========= */
+.background {
+ background: linear-gradient(45deg,#082032, #FB3640,#343F56,#2C394B);
+  background-size: 400% 400%;
+  animation: Gradient 10s ease infinite;
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #FB3640;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 10s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+  border-color: #FB3640;
+}
+
+.cube:nth-child(2) {
+  animation-delay: 9s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 10s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 9s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 9s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+.cube:nth-child(7) {
+  animation-delay: 8s;
+  left: 40vw;
+  top: 10vh;
+}
+
+/* ================= Header ============ */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+nav {
+  color: #591BC5;
+  float: right;
+  margin: 30px 90px;
+  font-family: 'Rammetto One', cursive;
+}
+
+nav ul {
+  list-style: none;
+  font-family: 'Rammetto One', cursive;
+}
+
+nav ul li {
+  float: left;
+  transition: .3s;
+font-family: 'Rammetto One', cursive;
+}
+
+nav ul li a {
+  font-family: 'Rammetto One', cursive;
+  text-decoration: none;
+  color: #FFF;
+  transition: .5;
+  font-size: 19px;
+  margin-left: 16px;
+}
+
+nav ul li:hover a {
+  text-decoration: none;
+  color: #FFF;
+  ;
+}
+
+nav ul li:hover {
+  height: 45px;
+  padding-top: 30px;
+  margin-top: -30px;
+
+  text-decoration: none;
+
+}
+
+/* Logo */
+
+/* Header content & title & button*/
+.header-content {
+  margin-top: 25%;
+  text-align: center;
+  color: #EFEEF5;
+}
+
+.header-content h1 {
+font-family: 'Paytone One', sans-serif;
+  font-size: 6em;
+  letter-spacing: 1px;
+}
+
+.header-content p {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 20px auto;
+}
+
+.header-content button {
+  width: 140px;
+  margin: 20px 10px;
+  color: #591BC5;
+  font-size: 17px;
+  border: 1px solid #EFEEF5;
+  font-weight: 500;
+  background: #EFEEF5;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header-content button:hover {
+  border-radius: 0;
+}
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+.test-sect{
+  background-color: #343F56;
+}
+
+#about-us{
+  background-color: #343F56;
+}
+
+.box1 {
+  height: 700px;
+  width: 500px;
+  float: left;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+
+}
+.second-cont p{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#F4F6FF;
+}
+.second-cont h1{
+  font-family: 'Inknut Antiqua', serif;
+  color: #FA4659;
+}
+
+.box2 {
+  height: 700px;
+  width: 650px;
+  float: right;
+  padding-top: 200px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  background-color:#343F56;
+}
+.box2  h1{
+  color: #FB3640;
+}
+
+
+p {
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+
+
+.hey {
+  padding-bottom: 1px;
+  padding-left: 90px;
+  text-align: center;
+}
+
+.hello {
+  padding-bottom: 13px;
+  padding-left: 80px;
+  text-align: center;
+}
+
+.mid {
+position: relative;
+bottom: 30px;
+
+}
+#results{
+  background-color: red;
+}
+.d-block{
+  height: 800px;
+  width: 300px;
+  align-items: center;
+
+}
+#table{
+  background-color: #A799B7;
+}
+
+ #testimonials {
+background-color: #fff;
+}
+#testimonial-carousel{
+margin-top: 50px;
+margin-bottom: 0;
+background-color: #7868E6;
+}
+
+ .testimonial-text {
+font-size: 2rem;
+line-height: 1;
+text-align: center;
+color:#343F56;
+background-color: #7868E6;
+}
+
+.testimonial-image {
+width: 20%;
+position: relative;
+left: 450px;
+margin: 60px;
+
+}
+
+.icon {
+  height: 50%;
+  width: 50%;
+  padding-bottom: 30px;
+}
+.count{
+  color: #FA4659;
+}
+.mid{
+color:#082032;
+}
+.exp {
+    font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  bottom: 88px;
+  color: #E8E2DB;
+}
+
+.exp1 {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  bottom: 75px;
+  color:#FFE227;
+}
+.btn {
+  position: relative;
+  left: 290px;
+  bottom: 80px;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 4%;
+  text-align: left;
+}
+.btn :hover{
+color: #fff;
+}
+/* heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #2C394B;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  /* margin: 40px 0; */
+  background-color:#2C394B;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
+  border-radius: 15px;
+   margin: 30px;
+background-color: #2C394B;
+  transition: 0.5s;
+}
+
+
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #787A91;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  /* background-color: #F05454; */
+   background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+
+}
+
+body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #EEEEEE;
+  /* color: rgba(255, 255, 255, 0.9); */
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  /* color: #F05454; */
+   color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); */
+  background: #787A91;
+  color: #000;
+}
+/* heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+
+.box3 {
+  margin-top: 300px;
+  padding-top: 150px;
+   padding-left: 300px;
+  background-color: #2C394B;
+  width: 100%;
+}
+
+
+.cntgirl {
+  height: 500px;
+  width: 280px;
+  float: right;
+  position: relative;
+  bottom: 510px;
+  right: 100px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: 20%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+ #footer{
+position: relative;
+top: 600px;
+
+}
+.footer-img{
+height: 30px;
+width: 30px;
+margin: 20px 10px;
+position: relative;
+left: 40%;
+bottom: 12rem;
+}
+
+
+footer p{
+text-align: center;
+margin-left: 20%;
+padding-bottom: 0;
+}
