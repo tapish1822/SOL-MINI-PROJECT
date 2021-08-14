@@ -1,0 +1,1 @@
+# SOL-MINI-PROJECT
